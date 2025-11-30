@@ -7,9 +7,10 @@
 </head>
 
 <body>
-    <header>
+    <header role="banner">
         <h1>Tech News</h1>
-        <nav>
+
+        <nav aria-label="Navegação principal">
             <ul>
                 <li><a href="#noticias">Notícias</a></li>
                 <li><a href="#tutoriais">Tutoriais</a></li>
@@ -18,37 +19,37 @@
         </nav>
     </header>
 
-    <main>
-        <section id="noticias">
-            <h2>Notícias</h2>
+    <main id="conteudo-principal" role="main">
+        <section id="noticias" aria-labelledby="titulo-noticias">
+            <h2 id="titulo-noticias">Notícias</h2>
             
-            <article>
-                <h3>Navegadores mais rápidos</h3>
+            <article aria-labelledby="artigo-navegadores-titulo" role="article">
+                <h3 id="artigo-navegadores-titulo">Navegadores mais rápidos</h3>
                 <p>Comparação entre os principais navegadores.</p>
             </article>
 
-            <article>
-                <h3>Novo framework lançado</h3>
+            <article aria-labelledby="artigo-framework-titulo" role="article">
+                <h3 id="artigo-framework-titulo">Novo framework lançado</h3>
                 <p>Conheça o novo framework que está sendo adotado por grandes empresas.</p>
-                <button>Ver mais</button>
+                <button type="button" aria-label="Marcar para ver mais sobre este artigo">Ver mais</button>
             </article>
         </section>
         
-        <section id="tutoriais">
-            <h2>Tutoriais</h2>
+        <section id="tutoriais" aria-labelledby="titulo-turoriais">
+            <h2 id="titulo-turoriais">Tutoriais</h2>
         </section>
     </main>
 
-    <aside>
+    <aside role="complementary" aria-label="Dica de desempenho para navegação web">
         <p>Dica: atualize seus navegadores com frequência.</p>
     </aside>
 
-    <footer">
-        <section id="contato">
-            <h2>Contato</h2>
+    <footer role="contentinfo">
+        <section id="contato" aria-labelledby="titulo-contato">
+            <h2 id="titulo-contato">Contato</h2>
             <p>E-mail: <a href="mailto:contato@technews.com.br">contato@technews.com.br</a></p>
         </section>
-        <p>2025 Tech News</p>
+        <p aria-label="Informações de copyright">2025 Tech News</p>
     </footer>
 </body>
 </html>
